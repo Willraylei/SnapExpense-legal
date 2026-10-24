@@ -237,8 +237,8 @@
 
     <article id="en" lang="en">
       <section>
-        <p>SnapExpense is an expense tracker that runs on your own iPhone. By default, your expenses are stored only on this device. If you turn on iCloud Sync, they are stored in your own iCloud account. The developer does not provide accounts and does not run a server that stores your expenses.</p>
-        <p>This policy explains what data SnapExpense handles, where it is stored, when it leaves your device, and how you can control and delete it.</p>
+        <p>PennyTrace is an expense tracker that runs on your own iPhone. By default, your expenses are stored only on this device. If you turn on iCloud Sync, they are stored in your own iCloud account. The developer does not provide accounts and does not run a server that stores your expenses.</p>
+        <p>This policy explains what data PennyTrace handles, where it is stored, when it leaves your device, and how you can control and delete it.</p>
       </section>
       <section>
         <h2>Summary</h2>
@@ -269,24 +269,24 @@
       </section>
       <section>
         <h2>iCloud Sync</h2>
-        <p>iCloud Sync is a SnapExpense Pro feature. It is off by default and you turn it on in Settings.</p>
+        <p>iCloud Sync is a PennyTrace Pro feature. It is off by default and you turn it on in Settings.</p>
         <ul>
           <li>When it is on, your expenses (including receipt images, recognized text, and locations), custom categories, recurring bills, ledgers, and members are stored in the private CloudKit database of your own iCloud account and synced across devices signed in to the same Apple Account.</li>
           <li>Budgets, merchant category memory, AI insights, and app settings are not synced. They stay on each device.</li>
           <li>This data is in your iCloud account and the developer cannot access it. Apple stores and transmits it under Apple’s iCloud terms and privacy policy.</li>
-          <li>To learn about changes made on your other devices, the system delivers silent notifications to SnapExpense through the Apple Push Notification service. These are sent by Apple’s iCloud service. The developer has no push server and does not receive a push token.</li>
+          <li>To learn about changes made on your other devices, the system delivers silent notifications to PennyTrace through the Apple Push Notification service. These are sent by Apple’s iCloud service. The developer has no push server and does not receive a push token.</li>
           <li>If you turn iCloud Sync off (it takes effect the next time you open the app), your expenses stay on this device and later changes are no longer uploaded. The copy already in iCloud remains until you delete it (see “Data retention and deletion”).</li>
           <li>If your subscription ends, syncing pauses and your expenses stay on this device.</li>
         </ul>
       </section>
       <section>
         <h2>Widgets, Live Activities, and the share extension</h2>
-        <p>The SnapExpense app, its widgets, and its share extension exchange data through a shared App Group container. This container is on your device, so using it does not send data anywhere.</p>
+        <p>The PennyTrace app, its widgets, and its share extension exchange data through a shared App Group container. This container is on your device, so using it does not send data anywhere.</p>
         <ul>
           <li>Home Screen and Lock Screen widgets: the app writes this week’s, this month’s, and this year’s spending totals for the current ledger, remaining budget, and this month’s top category to the shared container, and the widgets read and display them on the device. Without an active Pro subscription, widgets show an upgrade prompt instead of these numbers.</li>
           <li>The Scan Receipt control in Control Center only opens the app’s scanner. It does not read your expenses.</li>
           <li>Live Activities (Lock Screen and Dynamic Island) show only the progress of the current scan, on the device. They are not updated by remote push.</li>
-          <li>Share extension and Shortcuts: when you share a receipt image to SnapExpense from another app, the extension saves the image to an inbox in the shared container. The next time SnapExpense opens, it reads and recognizes the image, then removes it from the inbox right away.</li>
+          <li>Share extension and Shortcuts: when you share a receipt image to PennyTrace from another app, the extension saves the image to an inbox in the shared container. The next time PennyTrace opens, it reads and recognizes the image, then removes it from the inbox right away.</li>
         </ul>
       </section>
       <section>
@@ -312,14 +312,14 @@
         <p>AI Features is off by default. It turns on only after you explicitly agree during onboarding or in Settings. You can turn it off at any time.</p>
         <h3>Receipt recognition</h3>
         <ol>
-          <li>SnapExpense first reads the text in the image on your device using Apple’s Vision framework. This step does not leave your device.</li>
+          <li>PennyTrace first reads the text in the image on your device using Apple’s Vision framework. This step does not leave your device.</li>
           <li>When AI Features is on, the recognized text is sent to the developer’s server in mainland China (Volcengine veFaaS, North China 2 (Beijing), cn-beijing region). The server passes it to the Doubao model on Volcengine Ark, which extracts the merchant, amount, category, date, and note.</li>
           <li>The request contains only the recognized receipt text, today’s date, the names of your custom categories (up to 20), and which recognition pass it is. It does not contain the image, your expense database, locations, budgets, or recurring bills.</li>
-          <li>If cloud processing fails, or AI Features is off, SnapExpense parses the text on the device instead: with Apple’s on-device foundation model on devices that support Apple Intelligence, or with built-in rules otherwise. On-device processing does not leave your device.</li>
+          <li>If cloud processing fails, or AI Features is off, PennyTrace parses the text on the device instead: with Apple’s on-device foundation model on devices that support Apple Intelligence, or with built-in rules otherwise. On-device processing does not leave your device.</li>
         </ol>
         <p>If a receipt shows a name, phone number, address, membership number, or the last digits of a card, that text is part of the recognized text and is sent with it. Please do not photograph documents that are unrelated to an expense.</p>
         <h3>Spending insights</h3>
-        <p>AI Insights on the Stats screen is a SnapExpense Pro feature. A request is sent only after you tap it. It contains totals for the current ledger and period:</p>
+        <p>AI Insights on the Stats screen is a PennyTrace Pro feature. A request is sent only after you tap it. It contains totals for the current ledger and period:</p>
         <ul>
           <li>The ledger name and period</li>
           <li>Total spending and income, and the totals for the previous period</li>
@@ -342,7 +342,7 @@
         <p>The confirmation screen shows where a result came from, such as “Recognized by Cloud AI”, and you can edit it before saving. Insights on the Stats screen are labeled AI Insights. AI-generated content may be inaccurate. It is for reference only and is not financial advice.</p>
       </section>
       <section>
-        <h2>SnapExpense Pro and Ultra subscriptions</h2>
+        <h2>PennyTrace Pro and Ultra subscriptions</h2>
         <ul>
           <li>New users can try Pro in the app for 14 days without starting a subscription. The trial does not automatically charge you when it ends.</li>
           <li>Pro and Ultra are available as monthly or yearly auto-renewing subscriptions. The purchase screen shows the current price and period.</li>
@@ -360,7 +360,7 @@
       </section>
       <section>
         <h2>App Lock</h2>
-        <p>When App Lock is on, SnapExpense uses the system’s Face ID, Touch ID, or device passcode. iOS performs the check and tells the app only whether it succeeded. Biometric data is not available to the app and does not leave your device.</p>
+        <p>When App Lock is on, PennyTrace uses the system’s Face ID, Touch ID, or device passcode. iOS performs the check and tells the app only whether it succeeded. Biometric data is not available to the app and does not leave your device.</p>
       </section>
       <section>
         <h2>Problem reports</h2>
@@ -370,15 +370,15 @@
         <h2>Data retention and deletion</h2>
         <ul>
           <li>In the app, you can delete individual expenses, or use Delete All Expenses in Settings. If iCloud Sync is on, deletions sync to iCloud and your other devices.</li>
-          <li>Deleting SnapExpense removes its data from this device, including the shared container.</li>
-          <li>Data in iCloud is not deleted when you delete the app. You can delete it in Settings &gt; [your name] &gt; iCloud &gt; Manage Account Storage on your iPhone by selecting SnapExpense. You can also delete your expenses in the app while sync is still on, then turn iCloud Sync off.</li>
+          <li>Deleting PennyTrace removes its data from this device, including the shared container.</li>
+          <li>Data in iCloud is not deleted when you delete the app. You can delete it in Settings &gt; [your name] &gt; iCloud &gt; Manage Account Storage on your iPhone by selecting PennyTrace. You can also delete your expenses in the app while sync is still on, then turn iCloud Sync off.</li>
           <li>Rate-limit counters on the developer’s server expire within 2 days. Access logs contain nothing that identifies you.</li>
           <li>Because the developer does not store your expenses and cannot access your iCloud data, the developer cannot view, export, or delete this data for you. You can export a CSV file or a full backup in the app at any time.</li>
         </ul>
       </section>
       <section>
         <h2>Children</h2>
-        <p>SnapExpense is not directed at children, and the developer does not knowingly collect personal information from children. Please do not let a child use SnapExpense to photograph receipts that contain personal information.</p>
+        <p>PennyTrace is not directed at children, and the developer does not knowingly collect personal information from children. Please do not let a child use PennyTrace to photograph receipts that contain personal information.</p>
       </section>
       <section>
         <h2>Changes to this policy</h2>
@@ -391,7 +391,7 @@
     </article>
 
   </main>
-  <footer>账迹 · SnapExpense</footer>
+  <footer>账迹 · PennyTrace</footer>
   <script>
     const zh = document.getElementById("zh");
     const en = document.getElementById("en");
@@ -406,7 +406,7 @@
       btnZh.setAttribute("aria-pressed", String(!english));
       btnEn.setAttribute("aria-pressed", String(english));
       document.documentElement.lang = english ? "en" : "zh-Hans";
-      document.title = english ? "SnapExpense Privacy Policy" : "账迹隐私政策";
+      document.title = english ? "PennyTrace Privacy Policy" : "账迹隐私政策";
       title.textContent = document.title;
       updated.textContent = english ? "Last updated: October 24, 2026" : "最后更新：2026年10月24日";
     }
